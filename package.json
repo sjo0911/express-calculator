@@ -6,8 +6,9 @@
   "type": "module",
   "scripts": {
     "start": "node app.js",
-    "test": "./node_modules/.bin/jest",
-    "unit-test":"./node_modules/.bin/jest src/__test__/integration",
+    "test": "node ./node_modules/.bin/jest",
+    "unit-test": "node ./node_modules/.bin/jest src/__test__/unit",
+    "integration-test":"node ./node_modules/.bin/jest src/__test__/integration",
     "e2e":"wait-on http://localhost:3000 && ./node_modules/.bin/jest src/__test__/e2e"
   },
   "author": "Patrik Nygren",
